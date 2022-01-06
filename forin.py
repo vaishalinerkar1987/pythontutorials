@@ -11,6 +11,9 @@ fruits = ["apple","banana", "mango", "chicku", "watermelone"]
 print(fruits[3])
 #apple is the first value is at offset(0) and 4th value watermelone is at offset(3)
 
+names = ["esha", "nisha", "mira"]
+print(names[0])
+
 quotes = {
     "name":"vaishali",
     "gender":"female",
