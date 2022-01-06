@@ -29,3 +29,11 @@ information = {
 }
 subinfo = "gender"
 print(subinfo , "says:" , information[subinfo])
+
+subjects = {
+    "english":"the last kid on the earth",
+    "mathe":"rechernerabe",
+    "deutsch":"der die das",
+}
+subsubjects = "english"
+print(subsubjects , "says:" , subjects[subsubjects])
