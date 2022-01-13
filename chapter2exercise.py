@@ -1,3 +1,5 @@
+
+####################### chapter 2 exercises
 ###### first
 prince = 99
 print(prince)
@@ -151,3 +153,59 @@ print(b)
 
 c= (-5) ** 2
 print(c)
+
+#########bases are bin. oct,hex
+######convert any integer into string with any bases
+value = 65
+print(bin(value))
+print(type(value))
+print(oct(value))
+print(hex(value))
+
+###chr() function converts integer in to single-character string equivalent
+chr(65)
+print(chr(65))
+
+chr(57)
+print(chr(57))
+
+int(True)
+print(int(True))
+int(False)
+print(int(False))
+a = int(True)
+print("converted integer value :",a)
+
+
+bool(1)
+print(bool(1)) # or
+b = bool(1)
+print(b)
+
+int(9.7e4)
+print(int(9.7e4))
+
+b= int('99')
+print(b)
+
+b= int('-99')
+print(b)
+
+## if string represents non decimal integer , we can include the bases
+c= int('10' , 2)  #binary
+print(c)
+d = int('10' , 8)  #octal
+print(d)
+e=int("10", 16)   #hexadecimal
+print(e)
+f = int("10" , 22)  # chesterdigital
+print(f)
+
+
+
+True+2
+print(True+2) # or declare variable and assign value to variable
+s = True + 2
+print(s)
+b = False +5.0
+print(b)
