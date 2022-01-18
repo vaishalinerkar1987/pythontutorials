@@ -73,3 +73,85 @@ elif color== "yellow":
     print("it is a soup")
 else:
     print("color is so :" , color)
+
+    ######### comparison operators are equality, inequality,lessthan,leassthan equal to
+    #### logiacal operators are and or not gate
+
+# boolean false, empty list []
+# empty tuple ()
+# empty  dic  {}
+# empty set  is set()
+
+some_list = []  # if we add [1,2,3,"visa"] in a string we will get "there is something in a list"
+if some_list:
+    print("there is something in a list")
+else:
+    print("it is empty")
+
+    ### multiple comparison
+    # suppose we have letter, want to know weather it is vowel
+    # vovels are 'a' ,'e', 'i', 'o','u'
+
+letter = "i"
+if letter == 'a' or letter == 'e' or letter == 'i' \
+        or letter == 'o' or letter == 'u':
+    print(letter , 'is vowel')
+else:
+    print(letter , 'is not vowel')
+
+
+#if we need to make comparision like that seperated by or-- you can use python membership operator is in
+# use previous example....
+
+vowels = 'aeiou'
+letter = 'i'
+letter in vowels
+if letter in vowels:
+    print(letter, 'is a vowel')
+else:
+    print(letter , 'is not a vowel')
+
+    ################# using set
+vowel_set = {'a','e','i','o','u'}
+letter = 'u'
+letter in vowel_set
+if letter in vowel_set:
+    print(letter , 'is a vowel')
+else:
+    print(letter, 'is not a vowel')
+
+####### using list
+letter = 'i'
+vowel_list = [] # because there is nothing in list[] it is empty
+letter in vowel_list
+if letter in vowel_list:
+        print(letter, "is vowel")
+else:
+        print(letter, "is not a vowel")
+   ######## using tuple
+vowel_tuple = () # because there is nothing in parenthesis() it is empty
+letter in vowel_tuple
+if letter in vowel_tuple:
+    print(letter , "is a vowel in tuple")
+else:
+    print(letter , "is not a vowel in tuple")
+
+
+    ########
+    tweet_limit = 250
+    tweet_string ="blah" * 20
+    diff = tweet_limit - len(tweet_string)
+    if diff >= 0:
+        print("besser tweet")
+    else:
+        print("not so goood")
+
+        #### using walrus expression
+        # name := expression
+    tweet_limit = 250
+    tweet_string = "blah" * 20
+
+    if diff := tweet_limit - len(tweet_string) >= 0:
+        print("besser tweet")
+    else:
+        print("not so goood")
