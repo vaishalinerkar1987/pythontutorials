@@ -121,3 +121,23 @@ print(letters[:])
 print(letters[1:])
 print(letters[2:])   ### start from offset 2 value  to f-... end
 
+letters = 'abcdefghijklmnopqrstuvwxyz'
+print(letters)
+print(letters[3])    # offset strts from 0....to end
+print(letters[5])
+print(letters[:])
+print(letters[3:])    # offset strts from 1 to end..you can get the value from offset 3...
+print(letters[8:])
+print(letters[1:])
+print(letters[12:16]) ## it will count from offset 12 ...extract offset 16
+print(letters[-3:])  # it will starts from end.. from offset -1 is z,offset -2 is y and so on
+print(letters[18:-3])  # use offset between after 18 and before  -3
+print(letters[-6:-2])
+print(letters[::7])  # from start to end in steps of  7 characters
+print(letters[4:20:3]) # offset starts from 4 to 19 by 3.
+print(letters[19::4])  # from offset 19 to the end of 4.
+print(letters[:21:5])# start to offset 20 by 4
+print(letters[-1::-1])
+print(letters[::-1])
+print(letters[-50:])
+print(letters[:70])
