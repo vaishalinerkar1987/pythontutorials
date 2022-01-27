@@ -123,6 +123,7 @@ print(letters[2:])   ### start from offset 2 value  to f-... end
 
 letters = 'abcdefghijklmnopqrstuvwxyz'
 print(letters)
+letters[3]
 print(letters[3])    # offset strts from 0....to end
 print(letters[5])
 print(letters[:])
@@ -141,3 +142,144 @@ print(letters[-1::-1])
 print(letters[::-1])
 print(letters[-50:])
 print(letters[:70])
+
+
+# how to calculate the length with string
+letters = 'abcdefghijk'
+print(len(letters))
+letters =''
+print(len(letters))
+letters ='vaishali, chanchaöl,hitansh'
+print(len(letters))
+print(letters.split(','))
+
+# split() function which breaks the string into list of the smaller strings based on the some seperator
+
+task ='monday i have an appointment with doc,tuesday need to go to clinic for check up,wednesday need to submit task'
+print(task)   # split function a.split()
+print(task.split(','))  # split function in parenthesis with arguments
+print(task.split()) # split function in parenthesis without argument thats how python knows calling function
+
+#### combine by using join()
+## join() function which collpase the list of string into single string
+
+list = ['brother', 'sister', 'task']
+list_add=', '.join(list)   ##string.join( list ) it collapse the list of string into single string
+## opposite exact to split()
+print(list_add)
+
+### replace('', '') form
+setup ='electronics is my fav subject'
+print(setup.replace('electronics', 'IT'))
+
+setuptools='work is hard'
+setuptools.replace('work','life')  ## use replace() function
+print(setuptools.replace('work','life'))
+
+setup='a duck goes into a bar'
+setup.replace('a','a famous',100)
+print(setup.replace('a','a famous', 100))
+
+## strip with strip
+# strip() function , if we want to get rid of white space character ('', '\t' , '\n' for empty string, tab bar, and on the next line)
+# string variable world contains the string'earth'
+# strip() on the both ends. var.lstrip() and  var.rstrip() only from thr right side
+world = "   earth    "
+world.strip()       ### these are strip function. print on next line in parenthesis
+print(world.strip())
+world.strip('')
+print(world.strip(''))
+world.lstrip()
+print(world.lstrip())
+world.rstrip()        # this is var.rstrip() function
+print(world.rstrip())
+world.strip('!')  # if the character were not there, nothing will happens
+print(world.strip('!'))
+
+
+blurt='subject......!?'
+blurt.strip()
+print(blurt.strip())
+blurt.strip('.!?')  ### we want to remove this from the stribg so use strip()
+print(blurt.strip('.!?'))
+
+blurt='name..?!'
+print(blurt)
+blurt.strip()
+print(blurt.strip())
+blurt.strip('..?!')     ### we can remove last character from the  variable using blurt
+print(blurt.strip('..?!'))
+
+poem ='rain is a boring everything is boring'
+print(poem)
+poem[:12]  # copy as usual in print function
+print(poem[:12])   ## offset  starts from 0 to 11 and it will end at 12 offset
+poem[:9]
+print(poem[:9]) ## offset starts from 0 to 8 and end at offset 9
+
+poem[6:]
+print(poem[6:])  # offset will start after 6. that means from 9 onwards
+poem[10:]
+print(poem[10:])
+
+poem[3:7]
+print(poem[3:7]) # it gives value between offset 3 to offset 7
+poem[9:12]
+print(poem[9:12])
+
+### calculate the length
+len(poem)
+print(len(poem))
+
+# does it start with rain
+poem.startswith('rain')           ############## use startwith()
+print(poem.startswith('rain'))
+
+### how to end with
+poem.endswith('go away')
+print(poem.endswith('go away'))
+
+##### you can declare variable word and assign value boring to this word
+### find()  and index() we can use for finding offset of the substring... it will count the offset from star postion
+word='boring'
+poem.find(word)
+print(poem.find(word))   ### oder
+
+poem.find('boring')
+print(poem.find('boring'))
+poem.index('rain')
+print(poem.index('is'))
+
+##### rfind() and rindex()  it will count the of the last boring
+poem.rfind('boring')
+print(poem.rfind('boring'))
+poem.rindex('everything')
+print(poem.rindex('everything'))
+
+word='duck'
+poem.find(word)
+print(poem.find(word))   ### oder
+
+poem.find('duck')
+print(poem.find('duck'))
+
+#### for index()
+#word='duck'
+#poem.index(word)   ### it throws error
+#print(poem.index(word))
+
+
+poem.rfind(word)
+print(poem.rfind(word))
+# how many times this letters rain occures in poem
+poem.count('rain')
+print(poem.count('rain'))
+poem.count('boring')
+print(poem.count('boring'))
+
+
+
+
+
+
+
