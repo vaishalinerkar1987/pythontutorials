@@ -277,9 +277,85 @@ print(poem.count('rain'))
 poem.count('boring')
 print(poem.count('boring'))
 
+##### strip means you can remove the character,
+# capitalize means first letter of sentence we get in capital.
+# title means get all first letter of the word in capital
+setup = "i am going to caffee,,."
+setup.strip('.')
+print(setup.strip(',,.'))
+setup.strip('caffee')
+print(setup.strip('caffee,,.'))  # it will remove string with the character
+
+setup.capitalize()
+print(setup.capitalize())
+
+setup.title()
+print(setup.title())
+
+## convert all character into upper case
+setup.upper()
+print(setup.upper())  ## it gives all letters in capital
+
+# convert all case into lower case
+setup.lower()
+print(setup.lower())
+
+# swap uppercase and lower case
+setup.swapcase()
+print(setup.swapcase())
+
+# center string within 30 spaces
+setup.center(30)
+print(setup.center(30))
+
+# right justify
+setup.rjust(30)
+print(setup.rjust(30))
+
+#left justify
+setup.ljust(30)
+print(setup.ljust(30))
+
+'%s' % 24
+print('%s' % 24)
+
+'%f' % 2.03
+print('%f' % 2.03)
+
+#an integer and literal
+'%d%%' % 23
+print('%d%%' % 23) # oder
+
+ex='%d%%' % 50
+print(ex)
+
+name = 'salman'
+dog = 'lila'
+weight = 28
+'my favourite name is %s'  % name
+print('my favourite name is %s'  % name)
+'my dog name is %s' % dog
+print('my dog name is %s' % dog)
+'he is weight %s' % weight
+print('he is weight %s' % weight)
+
+thing='wood'
+'%s' % thing
+print('%s' % thing)
+'%15s' % thing
+print('%15s' % thing)
+## this + sign indicates right allign
+'%+12s' % thing
+print('%+12s' % thing)
+## this - sign indicates left allign
+'%-12s' % thing
+print('%-12s' % thing)
 
 
-
+thing = 84.3
+print(thing)
+'%f' % thing
+print('%f' % thing)
 
 
 
