@@ -357,5 +357,8 @@ print(thing)
 '%f' % thing
 print('%f' % thing)
 
-
+## for in
+name = "Hitansh"
+for letter in name:
+    print(letter)
 

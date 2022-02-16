@@ -1,0 +1,15 @@
+### anything in a range wit for in loop
+for x in range(0,3):
+    print(x)
+
+    ### use for loop to prin the values of the list [3,2,1,0]
+
+    for x in range(4):
+        print(x)
+###########
+for value in  [3,2,1,0]:
+    print(value)
+
+    ############
+list(range(4))
+print(list(range(4)))
