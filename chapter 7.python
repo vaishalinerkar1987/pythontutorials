@@ -1,0 +1,145 @@
+# chapter 7 # Tuples and list
+# with empty tuple
+empty_tuple=()
+print(empty_tuple)
+# tuple with one or more element, and each tuple seperated by commas
+
+add_tuple = "fruits",
+print(add_tuple)
+
+#we can enclose them with the parenthesis, still we get the same answer
+add_tuple=("fruits",)
+print(add_tuple)
+
+# if you have single thing in parenthesis, and ommit comma then you will not get tuple
+add_tuple=('veggi')
+print(add_tuple)
+#type(add_tuple)
+print(type(add_tuple))
+
+# consider variable has more than ne element, and follows as comma:
+add_tuple="banana","apple","chicku"
+print(add_tuple)
+# when you define tuple, using parenthesis is little safer and seperated by the commas
+add_tuple=('country','state','district')
+print(add_tuple)
+
+########################### some example with type string variable
+add_tuple='class',
+print(add_tuple)
+#type(add_tuple)
+print(type(add_tuple))
+#type('class',)
+print(type('class',))
+# type(('class',))
+print(type(('class',)))
+
+####### assign multiple variable at the once...........this is called tuple unpacking
+add_tuple=('country', 'state', 'district')
+print(add_tuple)
+a,b,c = add_tuple
+print(a)
+print(b)
+print(c)
+
+
+####### exchange the tuple
+password="fruits"
+country="india"
+password,country = country,password
+print(password)
+print(country)
+
+## create with the tuple()
+max_tuple=['country','states','district']
+# tuple(max_tuple)
+print(tuple(max_tuple))    ## get the perfect tuple in the parenthesis which are seperated by the commas
+
+### combine tuple using strings
+('country',)+('state', 'district')
+print(('country',)+('state', 'district'))   ## using the combine string combine tuple
+
+### duplicate items
+('heyyy',)*4
+print(('heyyy',)*4)     ## simple multiplication using commas for tuple
+## compare tuple
+a=(3,5,5)
+b=(2,3)
+a==b
+print(a==b)
+a <=b
+print(a<b)
+print(a>b)
+
+## iterate with the for and in
+list = ('go','out','refresh','fun')
+for word in list:
+    print(list)
+
+    t1 =('fie','fie','fio')
+    t2=('tio','tie')
+    t1+t2
+    print(t1+t2)
+    ##
+    id(t1)
+    print(id(t1))
+    id(t2)
+    print(id(t2))
+
+list =('go', 'went', 'out')
+for word in list:
+    print(list)
+
+
+    t1=('vaishu', 'nerkar','surname')
+    t2=('hita', 'chanchal', 'nerkar')
+    t1+t2
+    print(t1+t2)
+
+    # oder add variable to the t1+t2
+    Q=t1+t2
+    print(Q)
+
+    2+3j
+    print(type(2+3j))
+
+### dictionary and the sets
+
+    empty_dic={}
+    print(empty_dic)
+
+    name={'nam':'vaishu', 'middle':'chanchal', 'lastn':'nerkar'}
+    print(name)  # oder using tuples or dic() without curly brackets
+
+    name = dict(nam="neeta", middle="seeta", last="ner")
+    print(name)
+    ### oder in arrray (list) is denoted as []
+    los=('ab', 'cg', 'de')
+    dict(los)
+
+some_python = {
+'name':'vaishali',
+    'surname': 'nerkar',
+    'middelname':'chanchal',
+}
+print(some_python.get('name'))
+#oder
+print(some_python['middelname'])
+### use keys() for all keys to  enter in output
+print(some_python.keys())
+
+len(some_python)
+print(len(some_python))
+
+# perform unicorn glitter using dictionary
+var1 = {'a': 'mango', 'b': 'banana'}
+var2 = {'b': 'apple', 'c': 'orange'}
+{**var1, **var2}
+print({**var1, **var2})
+
+# combine dictionaries with update()
+
+variable1 = {'a':'abc', 'b':'bvc', 'c':'dfg'}
+others = {'d': 'dfr', 'e':'ghz', 'g':'wer'}
+variable1.update(others)
+print(variable1)
