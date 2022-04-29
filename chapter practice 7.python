@@ -1,0 +1,180 @@
+# about Dictionary
+
+signals= {"red":"you have to stop until  it's green",
+          "yellow":"wait",
+          "green":"go"}
+# print(signals)
+signals["blue"]="confuse everyone"
+print(signals)
+
+# otherwise you can add variable for this signals. in second way
+
+signals= {"red":"you have to stop until  it's green",
+          "yellow":"wait",
+          "green":"go"}
+# print(signals)
+signals_add=signals
+signals["blue"]="confuse everyone"   #add blue key in signals.
+print(signals_add) # oder print(signals)
+
+# 2. copy is a key denoted as copy()
+signals={"red":"you have to stop until  it's green",
+          "yellow":"wait",
+          "green":"go"}
+# now copy this signals in the another signals, assign variable for this
+original_signals=signals.copy()
+print(original_signals)
+signals["blue"]="reallllly confused"
+print(signals)
+
+print("signals")
+
+ #3 compare dictionaries
+a={1:1, 2:2, 3:3}
+b={3:3, 6:6, 2:2}
+a==b
+print(a==b) # or
+
+a={1:1, 2:2, 3:3}
+b={3:3, 1:1, 2:2}
+print(a==b)   # but other operators as <= oder >= won't work just only equal comparison
+
+# 4 - key 1 has list value [1,1] in a
+#key 2 has list[2,1]in b
+#python compares keys and values one by one
+a={1:[1,2], 2: [1], 3: [1]}
+b={1: [1], 2: [2], 3:[1,1]}
+print(a==b)
+
+# 5- iterate with for in---
+accusation={"room":"nice", "weapon":"gun", "person":"abcd"}
+for cards in accusation:
+    print(cards)  # means key is the type of cards in the game.here room,weapon and person are keys. and
+                # and nice ,gun abcd are values
+
+   # will do now iteration for dictionaries values() function
+accusation={"room":"nice", "weapon":"gun", "person":"abcd"}
+for values in accusation.values():
+    print(values)
+
+# for both keys and vaues as tuple you can use the items() function
+accusation={"room":"nice", "weapon":"gun", "person":"abcd"}
+for items in accusation.items():
+    print(items)
+# Tuple returned by items() function. keys =cards and values = contents.
+accusation={"room":"nice", "weapon":"gun", "person":"abcd"}
+for cards, contents in accusation.items():
+    print('card', cards, 'has the values', contents)
+
+
+ # 6--create with set function set()
+ # use the values and they are sepearted by commas in curli brackets
+
+empty_set = set()
+print(empty_set)
+
+even_numbers= {0,2,4,6,8}
+print(even_numbers)
+odd_numbers={1,3,5,7}
+print(odd_numbers)
+
+# now will make sets from the string, here set function is set()
+set("letters")  # create a set from the list,tuple , dictionaries
+print(set("letters")) # sets are unorderd. it contains only one alphabates even in set more letters
+# willl make set from the list
+set(["mango","apple","orange"])
+print(set(["mango","apple","orange"]))
+# will make the sets from tuple
+set(("color", "red","blue","white"))
+print(set(("color", "red","blue","white")))
+# will make set from dict
+set({"male", "female", "child"})
+print(set({"male", "female", "child"}))
+
+# 7----get length with len
+#key animal has set function- set() in that set function add list of animals then check the length.
+animals=set( ["dog","cat","horse"] )
+len(animals) # check length for animals
+print(len(animals))
+
+# 8---items with add()--- items is combination of keys and values
+numbers=set((1,2,3,4))
+#print(numbers)
+numbers.add(4) ## ohh add number 4 using add function
+print(numbers)
+
+# 9--- items with remove()
+numbers=set((5,6,7,8))
+print(numbers)
+numbers.remove(5)
+print(numbers)
+
+# 10---- iterate with for in
+# add tuple. in  set function
+furniture=set(('table','chair','tv'))
+for wood_stuff in furniture:
+    print(wood_stuff)
+
+# 11--- test for keys and values in items() oder names and contents in items()
+# will make dictionaries for drinks
+drinks={"red":{"wein", "trauben"},
+        "white":{"vodka","water","trauben"},
+        "juice":{"orange", "multivita", "water"},
+        "sub":{"math","english"}
+        }
+# 12-----dictionary contains keys:values. bunch of values for keys. key is alwayyyys unique
+for names, contents in drinks.items():
+    print("name", names, "has values", contents)
+    if 'white' in names:
+        print(contents)
+        # if "english" in contents:
+            # print(names)   # we can do this prcess one by one
+
+        for names, contents in drinks.items():
+         if contents & {"trauben", "water"}:
+             print(names)   # bcz we get trauben and water in 3 keys that are red,white,
+             # juice using operators.
+
+             # 13----------intersection()--- this is a function.
+             # intersection means in 2 sets something common value.means common in 2 sets with and operator
+
+             a={1,2}
+             b={2,3}
+             a&b
+             print( a&b)
+
+             a={"fruits","veggie"}
+             b={"veggie", "green"}
+             #print(a & b) using and operator
+
+             # now will use the intersection function
+             a.intersection(b)
+             print(a.intersection(b))
+
+             # 14------
+             #Union means combination of 2 sets
+             a={11,22,33}
+             b={44,55,66}
+             a | b
+             print( a | b) # oder
+             a.union(b)
+             ## difference
+             a={22,33,44}
+             b={11,22,33}
+             a-b
+             print(a-b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

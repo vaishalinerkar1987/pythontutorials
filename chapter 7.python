@@ -143,3 +143,5 @@ variable1 = {'a':'abc', 'b':'bvc', 'c':'dfg'}
 others = {'d': 'dfr', 'e':'ghz', 'g':'wer'}
 variable1.update(others)
 print(variable1)
+
+
