@@ -1,0 +1,70 @@
+##### start with the function. it denoted as def, function name, parenthesis,and colon
+def make_a_proud():
+ print("hita")
+make_a_proud()   # call a function as just putting function name with the parenthesis.
+#it will ran the code in its defination
+
+# function has no argument but it will return
+def something():
+    return True
+if something():
+    print("thats really wonderfull")
+else:
+    print("not so good")
+
+# second ex. on same topic
+def agree():
+    return False
+if agree():
+    print("nice")
+else:
+    print("not well")
+# with argument function
+def commentary(color):
+    if color == "red":
+        return "it is wine"
+    elif color == "white":
+        return "it is water"
+    elif color == "orange":
+        return "it is juice"
+    else:
+       return "i have never heared of the color" + color + "."
+
+    comment = commentary("blue") # call a function with argument "red" and assign for them variable comment
+    #  oder take directly in print option
+    print(comment)
+
+    ## none is very usefull.
+thing = None
+if thing:
+        print("it is a thing")
+else:
+ print("it is no thing")
+
+# None again
+thing = None
+if thing is None:
+    print("it is nothing")
+else:
+    print("it is yes")
+# None againnn
+thing =None
+if thing is None:
+   print("it is everything")
+else:
+    print("nothing")
+
+    ####
+def what(thing):
+    if thing is None:
+            print(thing, "is None")
+    elif thing:
+            print(thing, "it is True")
+    else:
+            print(thing, "False")
+            what(None)  # ans is None is None
+
+    # Positional arguments
+
+
+
