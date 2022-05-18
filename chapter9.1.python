@@ -1,0 +1,50 @@
+def menu(food,wein,color):
+    return {"food":food, "wein":wein, "color": color}
+#call function
+menu("paratha", "rot", "yellow")
+print(menu("paratha", "rot", "yellow")) # oder you can make in different way  in keyword arguments
+menu(food="pavbhaji", wein="white", color="anything")
+print(menu(food="pavbhaji", wein="white", color="anything"))
+
+##2..
+def buggy(arg, result=[]):
+    result.append(arg)
+    print(result)
+    #call function
+    buggy("a")
+    print(buggy("a"))
+
+
+    def works(arg):
+        result = []
+        result.append(arg)
+        return result
+    #call function
+    works("a")
+    print(works("a"))  # doesn't work
+
+    def something(*args):
+        print("positional tuple:", args)
+        #if you call function with no arguents
+        something(3,4,6,7)
+        print(something(3,4,6,7))
+
+
+def subjects_more(required1, required2, *args):
+    print("need this one:", required1)
+    print("need it:", required2)
+    print("all the rest:", args)
+    # cal function
+    subjects_more("scarf", "woolen", "maths", "english")
+    print(subjects_more("scarf", "woolen", "maths", "english"))  #not work
+
+    def print_kwargs(**kwargs):
+        print("keyword arguments:", kwargs)
+        print_kwargs() # call function withought arguments
+        print( print_kwargs())
+        #call function with arguents
+        print_kwargs(wine='pink',food='nice')
+        print(print_kwargs(wine='pink',food='nice'))
+
+
+
